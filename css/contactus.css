@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #262626;
+    /* Set the background color for the whole page */
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #262626;
+    /* Set the background color for the header */
+    color: #000000;
+}
+
+/* Style for the header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #262626;
+    color: #fff;
+    position: relative; /* Add position relative to enable absolute positioning of the mobile-toggle */
+}
+
+#logo {
+    max-width: 250px;
+    /* Make the logo size half (75px) */
+}
+
+/* Style the first column of nav-buttons */
+#nav-column1 {
+    text-align: center;
+    float: left;
+    width: 75%;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd106;
+    color: #000000;
+    text-decoration: none;
+    margin: 4px;
+    transition: background-color 0.3s;
+    transition: transform 1s;
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav-button:hover {
+    background-color: #fff8bb;
+    transform: scale(1.1); /* Add a slight scale (growth) effect on hover */
+}
+
+
+#content {
+    display: flex;
+    padding: 10px;
+    /* Add padding to the content */
+    background-color: rgba(0, 0, 0, 0.527);
+    /* Light gray semi-transparent background */
+    margin: 25px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#text {
+    flex: 1;
+    padding-right: 50px;
+    color: #ffe101;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#text p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #fcf6c5;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#socials {
+    display: flex;
+    padding: 10px;
+    /* Add padding to the content */
+    background-color: rgba(0, 0, 0, 0.527);
+    /* Light gray semi-transparent background */
+    margin: 25px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#socials-text {
+    flex: 1;
+    padding-right: 50px;
+    color: #ffe101;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#socials-text p {
+    color: #fcf6c5;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: #ffe101;
+    padding: 10px 0;
+}
+
+#footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-copyright {
+    margin-right: 10px;
+}
+
+/* Grid layout for footer columns and rows */
+#footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* Five rows */
+    gap: 4px;
+    padding: 15px;
+}
+
+/* Hover effect for the clickable footer buttons */
+.footer-item {
+    background-color: #ffd106;
+    /* Light gray semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    display: inline-block; /* Display as inline-block for proper button appearance */
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, transform 1s;
+}
+
+/* Hover effect for the footer buttons */
+.footer-item:hover {
+    background-color: #ffe956; /* Slightly lighter color on hover */
+}

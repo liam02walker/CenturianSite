@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centurian Warrior</title>
+    <link rel="icon" type="image/png" href="Images/WarriorLogo.png" />
+    <link rel="stylesheet" href="/css/tv.css" />
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="../Images/TransparentLogo.png" alt="Logo">
+        <div id="nav-column1">
+            <a class="nav-button" href="index.html">HOME</a>
+            <a class="nav-button" href="mma.html">ARS BELLICA MMA</a>
+            <a class="nav-button" href="boxing.html">CENTURIAN AMATEUR BOXING</a>
+            <a class="nav-button" href="pt.html">PERSONAL TRAINING</a>
+            <a class="nav-button" href="tv.html">CENTURIAN TV</a>
+            <a class="nav-button" href="fightwear.html">CENTURIAN FIGHTWEAR</a>
+            <a class="nav-button" href="challenge.html">ULTIMATE WARRIOR CHALLENGES</a>
+            <a class="nav-button" href="contactus.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="text">
+            <h1>Centurian Warrior Show</h1>
+            <p>
+                The Centurian Warrior show is about interviewing top level athletes in the fighting genre and their back story on
+                how they started out just like YOU!
+            </p>
+            <br>
+            <p>
+                The show is here to show and inspire you on what is possible if you put your absolute effort in and dedicate yourself
+                to achieving one goal
+            </p>
+            <br>
+            <br>
+            <button>DOWNLOAD THE APP</button>
+        </div>
+        <div id="images-container">
+            <div class="slideshow-container">
+                <img class="slideshow active" src="../Images/Coach Pictures/Coach1.jpg" alt="Image 1">
+                <img class="slideshow" src="../Images/Coach Pictures/Coach2.jpg" alt="Image 2">
+                <img class="slideshow" src="../Images/Coach Pictures/Coach3.jpg" alt="Image 3">
+                <img class="slideshow" src="../Images/Coach Pictures/Coach4.jpg" alt="Image 4">
+
+                <button class="next-button" onclick="nextImage()">〉</button>
+                <button class="previous-button" onclick="previousImage()">〈</button>
+
+                <div id="image-circles">
+                    <!-- Add a div for each image with a class "image-circle" -->
+                    <div class="image-circle" onclick="showSlide(0)"></div>
+                    <div class="image-circle" onclick="showSlide(1)"></div>
+                    <div class="image-circle" onclick="showSlide(2)"></div>
+                    <div class="image-circle" onclick="showSlide(3)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="show">
+        <div id="show-text">
+            <h1>Show Sneak Peaks</h1>
+            <p>
+                Snippets Here As A Slideshow
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <div id="music">
+        <div id="music-text">
+            <h1>Centurian Warrior Music</h1>
+            <p>
+                Refer To APP For Music
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div id="footer-text">
+            <span id="footer-copyright">&#169; Copyright 2023 by Centurian Warrior</span>
+            <div id="footer-grid">
+                <!-- Footer grid items -->
+                <a href="index.html" class="footer-item">Info</a>
+                <a href="contactus.html" class="footer-item">Contact Us</a>
+                <a href="boxing.html" class="footer-item">Amateur Boxing</a>
+                <a href="mma.html" class="footer-item">ARS Bellica MMA</a>
+                <a href="pt.html" class="footer-item">Personal Training</a>
+                <a href="challenge.html" class="footer-item">Ultimate Warriors Challenge</a>
+                <a href="tv.html" class="footer-item">Centurian TV</a>
+                <a href="fightwear.html" class="footer-item">Centurian Fightwear</a>
+                <a href="contactus.html" class="footer-item">Centurian Socials</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow');
+        let timer; // Store the timer ID
+        function showSlide(n) {
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                imageCircles[i].classList.remove('active'); // Remove active class from all circles
+            }
+            slides[slideIndex].style.display = 'block';
+            imageCircles[slideIndex].classList.add('active'); // Add active class to the current circle
+            clearTimeout(timer); // Cancel the existing timer
+            timer = setTimeout(nextImage, 3000); // Start a new timer
+        }
+        const imageCircles = document.querySelectorAll('.image-circle'); // Select all image circles
+        showSlide(slideIndex);
+        function nextImage() {
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+        function previousImage() {
+            slideIndex--;
+            showSlide(slideIndex);
+        }
+        showSlide(slideIndex);
+    </script>
+</body>
+
+</html>
