@@ -1,570 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <script src="./JS/index.js"></script>
     <title>Centurian Warrior</title>
     <link rel="icon" type="image/png" href="./Images/WarriorLogo.png" />
-    <link rel="stylesheet" href="./css/index.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <img id="logo" src="./Images/TransparentLogo.png" alt="Logo">
-        <div id="nav-column1">
-            <a class="nav-button" href="./index.html">HOME</a>
-            <a class="nav-button" href="./mma.html">ARS BELLICA MMA</a>
-            <a class="nav-button" href="./boxing.html">CENTURIAN AMATEUR BOXING</a>
-            <a class="nav-button" href="./pt.html">PERSONAL TRAINING</a>
-            <a class="nav-button" href="./tv.html">CENTURIAN TV</a>
-            <a class="nav-button" href="./fightwear.html">CENTURIAN FIGHTWEAR</a>
-            <a class="nav-button" href="./challenge.html">ULTIMATE WARRIOR CHALLENGES</a>
-            <a class="nav-button" href="./contactus.html">CONTACT US</a>
-        </div>
+      <img id="logo" src="./Images/TransparentLogo.png" alt="Logo" />
+      <div id="nav-column1">
+        <a class="nav-button" href="./index.html">HOME</a>
+        <a class="nav-button" href="#">ARS BELLICA MMA</a>
+        <a class="nav-button" href="#">CENTURIAN AMATEUR BOXING</a>
+        <a class="nav-button" href="#">PERSONAL TRAINING</a>
+        <a class="nav-button" href="#">CENTURIAN TV</a>
+        <a class="nav-button" href="#">CENTURIAN FIGHTWEAR</a>
+        <a class="nav-button" href="#">ULTIMATE WARRIOR CHALLENGES</a>
+        <a class="nav-button" href="#">CONTACT US</a>
+      </div>
     </div>
 
     <div id="content">
-        <div id="text">
-            <h1>Welcome to Centurian Warrior</h1>
-            <p>
-                This website is all about the power of influence
-            </p>
-            <br>
-            <p>
-                Learning from other people is how the world works
-            </p>
-            <br>
-            <p>
-                EMBRACE Education and take from it what you need. Then pass it on so that the next person can follow
-                and pass it on to the next.
-            </p>
-            <br>
-            <p>
-                Humans have been designed to be the Work Force and reproduce the next, serve your purpose and let's get
-                to work!
-            </p>
-        </div>
-        <div id="images-container">
-            <div class="slideshow-container">
-                <img class="slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="Image 1">
-                <img class="slideshow" src="./Images/Coach Pictures/Coach2.jpg" alt="Image 2">
-                <img class="slideshow" src="./Images/Coach Pictures/Coach3.jpg" alt="Image 3">
-                <img class="slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="Image 4">
+      <div id="text">
+        <h1>Welcome to Centurian Warrior</h1>
+        <p>This website is all about the power of influence</p>
 
-                <button class="next-button" onclick="nextImage()">〉</button>
-                <button class="previous-button" onclick="previousImage()">〈</button>
+        <p>Learning from other people is how the world works</p>
 
-                <div id="image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="image-circle" onclick="showSlide(0)"></div>
-                    <div class="image-circle" onclick="showSlide(1)"></div>
-                    <div class="image-circle" onclick="showSlide(2)"></div>
-                    <div class="image-circle" onclick="showSlide(3)"></div>
-                </div>
-            </div>
+        <p>
+          EMBRACE Education and take from it what you need. Then pass it on so
+          that the next person can follow and pass it on to the next.
+        </p>
+
+        <p>
+          Humans have been designed to be the Work Force and reproduce the next,
+          serve your purpose and let's get to work!
+        </p>
+      </div>
+      <div id="images-container">
+        <div class="slideshow-container">
+          <img
+            class="slideshow active"
+            src="./Images/CoachPictures/Coach1.jpg"
+            alt="Image 1"
+          />
+          <img
+            class="slideshow"
+            src="./Images/CoachPictures/Coach2.jpg"
+            alt="Image 2"
+          />
+          <img
+            class="slideshow"
+            src="./Images/CoachPictures/Coach3.jpg"
+            alt="Image 3"
+          />
+          <img
+            class="slideshow"
+            src="./Images/CoachPictures/Coach4.jpg"
+            alt="Image 4"
+          />
+
+          <button class="next-button" onclick="nextImage()">〉</button>
+          <button class="previous-button" onclick="previousImage()">〈</button>
+
+          <div id="image-circles">
+            <div class="image-circle" onclick="showSlide(0)"></div>
+            <div class="image-circle" onclick="showSlide(1)"></div>
+            <div class="image-circle" onclick="showSlide(2)"></div>
+            <div class="image-circle" onclick="showSlide(3)"></div>
+          </div>
         </div>
+      </div>
     </div>
+    <script>
+      showSlide(slideIndex);
+    </script>
 
     <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToCenturianSection()">
-            <span>⇩</span>
-        </div>
+      <div class="scroll-line"></div>
+      <div class="scroll-arrow" onclick="scrollToSection('centurian-section')">
+        <span>⇩</span>
+      </div>
     </div>
 
     <div id="centurian-section">
-        <h2 div id="centurian-section-heading">The Centurian Principles</h2>
-        <p>Believing Is To Achieve</p>
-        <p>To believe you are capable of anything, makes anything possible</p>
+      <h2 div id="centurian-section-heading">The Centurian Principles</h2>
+      <p>Believing Is To Achieve</p>
+      <p>To believe you are capable of anything, makes anything possible</p>
 
-        <!-- Add the video element with controls and a source -->
-        <video controls width="100%">
-            <source src="your-video-file.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToMMASection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="mma-content">
-        <div id="mma-text">
-            <h1>ARS Bellica MMA</h1>
-            <p>
-                ARS Bellica is composed of 10 different MMA styles
-            </p>
-            <br>
-            <p>
-                Every person should know how to defend themselves in any situation and that's what ARS Bellica is here for
-            </p>
-            <br>
-            <p>
-                The 3 fighting styles EVERYBODY should know are: Boxing, Muay Thai & BJJ
-            </p>
-            <br>
-            <br>
-            <a class="mma-button" href="./mma.html">Click To View Classes</a>
-        </div>
-        <div id="mma-images-container">
-            <div class="slideshow-container">
-                <img class="mma-slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="mma-Image 1">
-                <img class="mma-slideshow" src="./Images/Coach Pictures/Coach2.jpg" alt="mma-Image 2">
-                <img class="mma-slideshow" src="./Images/Coach Pictures/Coach3.jpg" alt="mma-Image 3">
-                <img class="mma-slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="mma-Image 4">
-
-                <button class="mma-next-button" onclick="mmaNextImage()">〉</button>
-                <button class="mma-previous-button" onclick="mmaPreviousImage()">〈</button>
-
-                <div id="mma-image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="mma-image-circle" onclick="mmaShowSlide(0)"></div>
-                    <div class="mma-image-circle" onclick="mmaShowSlide(1)"></div>
-                    <div class="mma-image-circle" onclick="mmaShowSlide(2)"></div>
-                    <div class="mma-image-circle" onclick="mmaShowSlide(3)"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToBoxingSection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="boxing-content">
-        <div id="boxing-text">
-            <h1>Centurian Amateur Boxing</h1>
-            <p>
-                FREE Boxing Classes from ages 9-18
-            </p>
-            <br>
-            <p>
-                Centurian Warriors are being trained with the End Goal of creating CHAMPIONS
-            </p>
-            <br>
-            <p>
-                We help anyone who has the courage to step into the gym to overcome ANY obstacle that they may face!
-            </p>
-            <br>
-            <br>
-            <a class="boxing-button" href="./boxing.html">Click To View Classes</a>
-        </div>
-        <div id="boxing-images-container">
-            <div class="slideshow-container">
-                <img class="boxing-slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="boxing-Image 1">
-                <img class="boxing-slideshow" src="./Images/Coach Pictures/Coach2.jpg" alt="boxing-Image 2">
-                <img class="boxing-slideshow" src="./Images/Coach Pictures/Coach3.jpg" alt="boxing-Image 3">
-                <img class="boxing-slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="boxing-Image 4">
-
-                <button class="boxing-next-button" onclick="boxingNextImage()">〉</button>
-                <button class="boxing-previous-button" onclick="boxingPreviousImage()">〈</button>
-
-                <div id="boxing-image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="boxing-image-circle" onclick="boxingShowSlide(0)"></div>
-                    <div class="boxing-image-circle" onclick="boxingShowSlide(1)"></div>
-                    <div class="boxing-image-circle" onclick="boxingShowSlide(2)"></div>
-                    <div class="boxing-image-circle" onclick="boxingShowSlide(3)"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToPTSection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="pt-content">
-        <div id="pt-text">
-            <h1>Personal Training</h1>
-            <p>
-                Our Centurian Personal Training group are a bunch of dedicated individuals ready to become their best self early in
-                the morning
-            </p>
-            <br>
-            <p>
-                Here you will be able to learn; Pad Work & Circuit Training
-            </p>
-            <br>
-            <p>
-                Train with us here to have a HUGE step above everyone else
-            </p>
-            <br>
-            <br>
-            <a class="pt-button" href="./pt.html">Click To View Classes</a>
-        </div>
-        <div id="pt-images-container">
-            <div class="slideshow-container">
-                <img class="pt-slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="pt-Image 1">
-                <img class="pt-slideshow" src="./Images/Coach Pictures/Coach2.jpg" alt="pt-Image 2">
-                <img class="pt-slideshow" src="./Images/Coach Pictures/Coach3.jpg" alt="pt-Image 3">
-                <img class="pt-slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="pt-Image 4">
-
-                <button class="pt-next-button" onclick="ptNextImage()">〉</button>
-                <button class="pt-previous-button" onclick="ptPreviousImage()">〈</button>
-
-                <div id="pt-image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="pt-image-circle" onclick="ptShowSlide(0)"></div>
-                    <div class="pt-image-circle" onclick="ptShowSlide(1)"></div>
-                    <div class="pt-image-circle" onclick="ptShowSlide(2)"></div>
-                    <div class="pt-image-circle" onclick="ptShowSlide(3)"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToTVSection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="tv-content">
-        <div id="tv-text">
-            <h1>Centurian Warrior Show</h1>
-            <p>
-                Watch our motivating interviews with champions that were just like YOU!
-            </p>
-            <br>
-            <p>
-                Adam Jones interviews champions within the fighting realm, so listen in as they tell you a story never heard before
-            </p>
-            <br>
-            <br>
-            <a class="tv-button" href="./tv.html">Watch Some Sneak Peaks!</a>
-        </div>
-        <div id="tv-images-container">
-            <div class="slideshow-container">
-                <img class="tv-slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="tv-Image 1">
-                <img class="tv-slideshow" src="./Images/Coach Pictures/Coach2.jpg" alt="tv-Image 2">
-                <img class="tv-slideshow" src="./mages/Coach Pictures/Coach3.jpg" alt="tv-Image 3">
-                <img class="tv-slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="tv-Image 4">
-
-                <button class="tv-next-button" onclick="tvNextImage()">〉</button>
-                <button class="tv-previous-button" onclick="tvPreviousImage()">〈</button>
-
-                <div id="tv-image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="tv-image-circle" onclick="tvShowSlide(0)"></div>
-                    <div class="tv-image-circle" onclick="tvShowSlide(1)"></div>
-                    <div class="tv-image-circle" onclick="tvShowSlide(2)"></div>
-                    <div class="tv-image-circle" onclick="tvShowSlide(3)"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollToFightWearSection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="fightwear-content">
-        <div id="fightwear-text">
-            <h1>Centurian Fightwear</h1>
-            <p>
-                Centurian Fightwear is made with the finest of materials
-            </p>
-            <br>
-            <p>
-                Designed to last and allow comfort within your training gear!
-            </p>
-            <br>
-            <br>
-            <a class="fightwear-button" href="./fightwear.html">Go Shopping</a>
-        </div>
-        <div id="fightwear-images-container">
-            <div class="slideshow-container">
-                <img class="fightwear-slideshow active" src="./Images/Coach Pictures/Coach1.jpg" alt="fightwear-Image 1">
-                <img class="fightwear-slideshow" src="./mages/Coach Pictures/Coach2.jpg" alt="fightwear-Image 2">
-                <img class="fightwear-slideshow" src="./Images/Coach Pictures/Coach3.jpg" alt="fightwear-Image 3">
-                <img class="fightwear-slideshow" src="./Images/Coach Pictures/Coach4.jpg" alt="fightwear-Image 4">
-
-                <button class="fightwear-next-button" onclick="fightwearNextImage()">〉</button>
-                <button class="fightwear-previous-button" onclick="fightwearPreviousImage()">〈</button>
-
-                <div id="fightwear-image-circles">
-                    <!-- Add a div for each image with a class "image-circle" -->
-                    <div class="fightwear-image-circle" onclick="fightwearShowSlide(0)"></div>
-                    <div class="fightwear-image-circle" onclick="fightwearShowSlide(1)"></div>
-                    <div class="fightwear-image-circle" onclick="fightwearShowSlide(2)"></div>
-                    <div class="fightwear-image-circle" onclick="fightwearShowSlide(3)"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-section">
-        <div class="scroll-line"></div>
-        <div class="scroll-arrow" onclick="scrollTochallengeSection()">
-            <span>⇩</span>
-        </div>
-    </div>
-
-    <div id="challenge-content">
-        <div id="challenge-text">
-            <h1>Centurian challenge</h1>
-            <p>
-                Are you ready to challenge yourself like never before?
-            </p>
-            <br>
-            <p>
-                Do you have what it takes to become a Centurian Warrior?
-            </p>
-            <br>
-            <p>
-                Get ready to run like you have never ran before in your life!
-            </p>
-            <br>
-            <br>
-            <a class="challenge-button" href="./challenge.html">Become A Warrior</a>
-        </div>
+      <!-- Add the video element with controls and a source -->
+      <video controls width="100%">
+        <source src="your-video-file.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-        <div id="footer-text">
-            <span id="footer-copyright">&#169; Copyright 2023 by Centurian Warrior</span>
-            <div id="footer-grid">
-                <!-- Footer grid items -->
-                <a href="./index.html" class="footer-item">Info</a>
-                <a href="./contactus.html" class="footer-item">Contact Us</a>
-                <a href="./boxing.html" class="footer-item">Amateur Boxing</a>
-                <a href="./mma.html" class="footer-item">ARS Bellica MMA</a>
-                <a href="./pt.html" class="footer-item">Personal Training</a>
-                <a href="./challenge.html" class="footer-item">Ultimate Warriors Challenge</a>
-                <a href="./tv.html" class="footer-item">Centurian TV</a>
-                <a href="./fightwear.html" class="footer-item">Centurian Fightwear</a>
-                <a href="./contactus.html" class="footer-item">Centurian Socials</a>
-            </div>
+      <div id="footer-text">
+        <span id="footer-copyright"
+          >&#169; Copyright 2023 by Centurian Warrior</span
+        >
+        <div id="footer-grid">
+          <!-- Footer grid items -->
+          <a href="./index.html" class="footer-item">Info</a>
+          <a href="./contactus.html" class="footer-item">Contact Us</a>
+          <a href="./boxing.html" class="footer-item">Amateur Boxing</a>
+          <a href="./mma.html" class="footer-item">ARS Bellica MMA</a>
+          <a href="./pt.html" class="footer-item">Personal Training</a>
+          <a href="./challenge.html" class="footer-item"
+            >Ultimate Warriors Challenge</a
+          >
+          <a href="./tv.html" class="footer-item">Centurian TV</a>
+          <a href="./fightwear.html" class="footer-item">Centurian Fightwear</a>
+          <a href="./contactus.html" class="footer-item">Centurian Socials</a>
         </div>
+      </div>
     </div>
-
-    <script>
-        // Centurian Image Slideshow
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.slideshow');
-        let timer; // Store the timer ID
-        function showSlide(n) {
-            if (n >= slides.length) { slideIndex = 0; }
-            if (n < 0) { slideIndex = slides.length - 1; }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-                imageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            slides[slideIndex].style.display = 'block';
-            imageCircles[slideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(timer); // Cancel the existing timer
-            timer = setTimeout(nextImage, 3000); // Start a new timer
-        }
-        const imageCircles = document.querySelectorAll('.image-circle'); // Select all image circles
-        showSlide(slideIndex);
-        function nextImage() {
-            slideIndex++;
-            showSlide(slideIndex);
-        }
-        function previousImage() {
-            slideIndex--;
-            showSlide(slideIndex);
-        }
-        showSlide(slideIndex);
-
-        //MMA Image Slideshow
-        let mmaSlideIndex = 0;
-        const mmaSlides = document.querySelectorAll('.mma-slideshow');
-        let mmaTimer;
-        function mmaShowSlide(n) {
-            if (n >= mmaSlides.length) { mmaSlideIndex = 0; }
-            if (n < 0) { mmaSlideIndex = mmaSlides.length - 1; }
-            for (let i = 0; i < mmaSlides.length; i++) {
-                mmaSlides[i].style.display = 'none';
-                mmaImageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            mmaSlides[mmaSlideIndex].style.display = 'block';
-            mmaImageCircles[mmaSlideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(mmaTimer); // Cancel the existing timer
-            mmaTimer = setTimeout(mmaNextImage, 3000); // Start a new timer
-        }
-        const mmaImageCircles = document.querySelectorAll('.mma-image-circle'); // Select all image circles
-        mmaShowSlide(mmaSlideIndex);
-        function mmaNextImage() {
-            mmaSlideIndex++;
-            mmaShowSlide(mmaSlideIndex);
-        }
-        function mmaPreviousImage() {
-            mmaSlideIndex--;
-            mmaShowSlide(mmaSlideIndex);
-        }
-        mmaShowSlide(mmaSlideIndex);
-
-        //boxing Image Slideshow
-        let boxingSlideIndex = 0;
-        const boxingSlides = document.querySelectorAll('.boxing-slideshow');
-        let boxingTimer;
-        function boxingShowSlide(n) {
-            if (n >= boxingSlides.length) { boxingSlideIndex = 0; }
-            if (n < 0) { boxingSlideIndex = boxingSlides.length - 1; }
-            for (let i = 0; i < boxingSlides.length; i++) {
-                boxingSlides[i].style.display = 'none';
-                boxingImageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            boxingSlides[boxingSlideIndex].style.display = 'block';
-            boxingImageCircles[boxingSlideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(boxingTimer); // Cancel the existing timer
-            boxingTimer = setTimeout(boxingNextImage, 3000); // Start a new timer
-        }
-        const boxingImageCircles = document.querySelectorAll('.boxing-image-circle'); // Select all image circles
-        boxingShowSlide(boxingSlideIndex);
-        function boxingNextImage() {
-            boxingSlideIndex++;
-            boxingShowSlide(boxingSlideIndex);
-        }
-        function boxingPreviousImage() {
-            boxingSlideIndex--;
-            boxingShowSlide(boxingSlideIndex);
-        }
-        boxingShowSlide(boxingSlideIndex);
-
-        //pt Image Slideshow
-        let ptSlideIndex = 0;
-        const ptSlides = document.querySelectorAll('.pt-slideshow');
-        let ptTimer;
-        function ptShowSlide(n) {
-            if (n >= ptSlides.length) { ptSlideIndex = 0; }
-            if (n < 0) { ptSlideIndex = ptSlides.length - 1; }
-            for (let i = 0; i < ptSlides.length; i++) {
-                ptSlides[i].style.display = 'none';
-                ptImageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            ptSlides[ptSlideIndex].style.display = 'block';
-            ptImageCircles[ptSlideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(ptTimer); // Cancel the existing timer
-            ptTimer = setTimeout(ptNextImage, 3000); // Start a new timer
-        }
-        const ptImageCircles = document.querySelectorAll('.pt-image-circle'); // Select all image circles
-        ptShowSlide(ptSlideIndex);
-        function ptNextImage() {
-            ptSlideIndex++;
-            ptShowSlide(ptSlideIndex);
-        }
-        function ptPreviousImage() {
-            ptSlideIndex--;
-            ptShowSlide(ptSlideIndex);
-        }
-        ptShowSlide(ptSlideIndex);
-
-        //tv Image Slideshow
-        let tvSlideIndex = 0;
-        const tvSlides = document.querySelectorAll('.tv-slideshow');
-        let tvTimer;
-        function tvShowSlide(n) {
-            if (n >= tvSlides.length) { tvSlideIndex = 0; }
-            if (n < 0) { tvSlideIndex = tvSlides.length - 1; }
-            for (let i = 0; i < tvSlides.length; i++) {
-                tvSlides[i].style.display = 'none';
-                tvImageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            tvSlides[tvSlideIndex].style.display = 'block';
-            tvImageCircles[tvSlideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(tvTimer); // Cancel the existing timer
-            tvTimer = setTimeout(tvNextImage, 3000); // Start a new timer
-        }
-        const tvImageCircles = document.querySelectorAll('.tv-image-circle'); // Select all image circles
-        tvShowSlide(tvSlideIndex);
-        function tvNextImage() {
-            tvSlideIndex++;
-            tvShowSlide(tvSlideIndex);
-        }
-        function tvPreviousImage() {
-            tvSlideIndex--;
-            tvShowSlide(tvSlideIndex);
-        }
-        tvShowSlide(tvSlideIndex);
-
-        //fightwear Image Slideshow
-        let fightwearSlideIndex = 0;
-        const fightwearSlides = document.querySelectorAll('.fightwear-slideshow');
-        let fightwearTimer;
-        function fightwearShowSlide(n) {
-            if (n >= fightwearSlides.length) { fightwearSlideIndex = 0; }
-            if (n < 0) { fightwearSlideIndex = fightwearSlides.length - 1; }
-            for (let i = 0; i < fightwearSlides.length; i++) {
-                fightwearSlides[i].style.display = 'none';
-                fightwearImageCircles[i].classList.remove('active'); // Remove active class from all circles
-            }
-            fightwearSlides[fightwearSlideIndex].style.display = 'block';
-            fightwearImageCircles[fightwearSlideIndex].classList.add('active'); // Add active class to the current circle
-            clearTimeout(fightwearTimer); // Cancel the existing timer
-            fightwearTimer = setTimeout(fightwearNextImage, 3000); // Start a new timer
-        }
-        const fightwearImageCircles = document.querySelectorAll('.fightwear-image-circle'); // Select all image circles
-        fightwearShowSlide(fightwearSlideIndex);
-        function fightwearNextImage() {
-            fightwearSlideIndex++;
-            fightwearShowSlide(fightwearSlideIndex);
-        }
-        function fightwearPreviousImage() {
-            fightwearSlideIndex--;
-            fightwearShowSlide(fightwearSlideIndex);
-        }
-        fightwearShowSlide(fightwearSlideIndex);
-
-        /* JavaScript to handle scrolling to the centurian-section */
-        function scrollToCenturianSection() {
-            const centurianSection = document.getElementById('centurian-section');
-            centurianSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to MMA Section
-        function scrollToMMASection() {
-            const mmaSection = document.getElementById('mma-content');
-            mmaSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to Boxing Section
-        function scrollToBoxingSection() {
-            const boxingSection = document.getElementById('boxing-content');
-            boxingSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to PT Section
-        function scrollToPTSection() {
-            const ptSection = document.getElementById('pt-content');
-            ptSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to TV Section
-        function scrollToTVSection() {
-            const tvSection = document.getElementById('tv-content');
-            tvSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to FightWear Section
-        function scrollToFightWearSection() {
-            const fightwearSection = document.getElementById('fightwear-content');
-            fightwearSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        //Scroll to challenge Section
-        function scrollTochallengeSection() {
-            const challengeSection = document.getElementById('challenge-content');
-            challengeSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-</body>
-
+  </body>
 </html>
