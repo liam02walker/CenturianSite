@@ -1,10 +1,8 @@
-/* Base Styles */
 :root {
   --background-color: #262626;
   --text-color: #fcf6c5;
   --primary-color: #ffd106;
 }
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -12,8 +10,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Header */
 #header {
   display: flex;
   justify-content: space-between;
@@ -22,16 +18,13 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
 #logo {
   max-width: 100%;
 }
-
 #nav-column1 {
   text-align: center;
   width: 100%;
 }
-
 .nav-button {
   display: inline-block;
   padding: 1rem 2rem;
@@ -43,13 +36,10 @@ body {
   font-family: "Times New Roman", Times, serif;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .nav-button:hover {
   background-color: #fff8bb;
   transform: scale(1.1);
 }
-
-/* Content */
 #content {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +49,6 @@ body {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
-
 #text {
   flex: 1;
   padding: 1rem;
@@ -67,36 +56,29 @@ body {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 #text p {
   color: var(--text-color);
   font-family: sans-serif;
   font-size: 18px;
   text-align: center;
 }
-
 #images-container {
   flex: 1;
   text-align: center;
   position: relative;
 }
-
 .slideshow-container {
   position: relative;
   max-width: 100%;
 }
-
 .slideshow {
   display: none;
   width: 100%;
   max-height: 400px;
 }
-
 .slideshow.active {
   display: block;
 }
-
-/* Next and Previous Buttons for Slideshow */
 .next-button,
 .previous-button {
   background-color: transparent;
@@ -112,25 +94,20 @@ body {
   border-radius: 0;
   transition: background-color 0.3s;
 }
-
 .next-button:hover,
 .previous-button:hover {
   background-color: rgba(128, 128, 128, 0.7);
 }
-
-/* Scroll Section */
 #scroll-section {
   text-align: center;
   margin: 2rem 0;
   position: relative;
 }
-
 .scroll-line {
   width: 100%;
   height: 2px;
   background-color: #ffa500;
 }
-
 .scroll-arrow {
   position: absolute;
   top: 50%;
@@ -146,18 +123,14 @@ body {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .scroll-arrow:hover {
   background-color: #ffd700;
   transform: translate(-50%, -50%) scale(0.9);
 }
-
 .scroll-arrow span {
   font-size: 150%;
   color: #fff;
 }
-
-/* Centurian Section */
 #centurian-section {
   text-align: center;
   color: #ffe101;
@@ -165,32 +138,26 @@ body {
   padding: 1rem;
   margin: 1rem;
 }
-
 #centurian-section-heading {
   padding-left: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 #centurian-section p {
   color: var(--text-color);
   font-family: sans-serif;
   font-size: 18px;
 }
-
-/* Footer */
 #footer {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.527);
   color: #ffe101;
   padding: 1rem 0;
 }
-
 #footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #footer-copyright {
   margin-right: 10px;
 }
@@ -207,12 +174,29 @@ body {
   .nav-button {
     width: 100%;
   }
+  #content {
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   #text {
-    flex: 1;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 1rem;
   }
   #images-container {
-    flex: 1;
+    padding: 1rem;
+  }
+  .slideshow-container {
+    max-height: 300px;
+  }
+  .next-button,
+  .previous-button {
+    padding: 0.5rem;
+  }
+  #scroll-section {
+    margin: 1rem 0;
+  }
+  .scroll-arrow {
+    width: 15%;
+    padding-top: 15%;
   }
 }
