@@ -1,0 +1,91 @@
+/* DEFAULT STYLE */
+body {
+  background-color: #1f1f1f;
+}
+.headerContainer {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.headerContainer img {
+  width: 20%;
+  margin-right: 20%;
+}
+.navButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+.navButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+#moreButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+#moreButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+.hiddenLinks {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #808080;
+  margin-left: auto;
+}
+.hidButton {
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.hidButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+#hiddenLinks {
+  display: none;
+}
+.sectionContainer {
+  background-color: rgba(83, 83, 83, 0.5); /* Semi-transparent gray background */
+  text-align: center; /* Center-align text inside sectionContainer */
+  padding: 20px; /* Add some padding for spacing */
+  margin: 5px 75px;
+}
+.sectionText {
+  font-size: 25px;
+}
+.sectionText h2 {
+  text-decoration: underline black;
+  font-size: 50px;
+  color: #c7ac14;
+}
+.sectionText h3 {
+  color: #ccb73e;
+}
+.sectionText p {
+  color: #fff4b3;
+}
+footer {
+  color: #b4ad84;
+  text-align: center;
+}

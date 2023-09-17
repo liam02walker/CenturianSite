@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/bellica.css" />
+    <title>Centurian Warrior</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <img src="./Images/TransparentLogo.png" />
+
+        <div id="navButtons">
+          <a href="./index.html" class="navButton">HOME</a>
+          <a href="./boxing.html" class="navButton">AMATEUR BOXING</a>
+          <a href="./training.html" class="navButton">PERSONAL TRAINING</a>
+          <button id="moreButton" onclick="moreButton()">MORE</button>
+          <div class="hiddenLinks" id="hiddenLinks">
+            <a href="./show.html" class="hidButton">CENTURIAN SHOW</a>
+            <a href="./apps.html" class="hidButton">CENTURIAN APPS</a>
+            <a href="./fightwear.html" class="hidButton">CENTURIAN FIGHTWEAR</a>
+            <a href="./contactUs.html" class="hidButton">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="currentOffer">
+        <div id="currentOfferText">
+          <h3>£30 a Month for:</h3>
+          <h3>Boxing, MMA, PT</h3>
+        </div>
+      </div>
+
+      <div id="sessionDetails">
+        <div id="sessionDetailsText">
+          <h3>£6 Per Session - Mon, Wed & Fri: 6:15am-7am</h3>
+        </div>
+      </div>
+      <div id="training">
+        <div class="sectionImage">
+          <div class="sectionText">
+            <h2>Personal Training</h2>
+            <p>We train 2 different things within Personal Training:</p>
+            <ul>
+              <li>Circuit Training</li>
+              <li>Pad Work Training</li>
+            </ul>
+            <h3>Times</h3>
+            <p>Mondays, Wednesdays & Fridays @ 6:15am-7am</p>
+            <h3>Prices</h3>
+            <p>£6 Per Session</p>
+          </div>
+          <div class="sectionImages">
+            <div id="imageContainer">
+              <img src="./Images/CoachPictures/Image1.png" class="slide" />
+              <img src="./Images/CoachPictures/Image2.png" class="slide" />
+              <img src="./Images/CoachPictures/Image3.png" class="slide" />
+              <img src="./Images/CoachPictures/Image4.png" class="slide" />
+              <img src="./Images/CoachPictures/Image5.png" class="slide" />
+            </div>
+            <div class="slider-buttons">
+              <button id="prevButton" class="slider-button" onclick="prevSlide()">&#9664; Prev</button>
+              <button id="nextButton" class="slider-button" onclick="nextSlide()">Next &#9654;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollButton">
+        <button id="scrollButton" onclick="scrollToSection('about')">
+          <div class="scrollIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 21l-12-18h24z" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div id="about">
+        <div class="sectionContainer">
+          <div class="sectionText">
+            <h2>Why do Personal Training?</h2>
+            <h3>Description</h3>
+            <p>
+              Personal Training is for those who are truly dedicated to getting in the best shape possible and having a warrior mentality. The training part of
+              the session is only half the challenge, getting up out of that cozy, warm and soft bed to get into the gym and put your body through a challenge
+              is the other half.
+            </p>
+            <h3>Do YOU have what it takes?</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; Centurian Warrior 2023</footer>
+    <script src="./JS/bellica.js"></script>
+  </body>
+</html>

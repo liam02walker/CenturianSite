@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/boxing.css" />
+    <title>Centurian Warrior</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <img src="./Images/TransparentLogo.png" />
+
+        <div id="navButtons">
+          <a href="./index.html" class="navButton">HOME</a>
+          <a href="./bellica.html" class="navButton">ARS Bellica MMA</a>
+          <a href="./training.html" class="navButton">PERSONAL TRAINING</a>
+          <button id="moreButton" onclick="moreButton()">MORE</button>
+          <div class="hiddenLinks" id="hiddenLinks">
+            <a href="./show.html" class="hidButton">CENTURIAN SHOW</a>
+            <a href="./apps.html" class="hidButton">CENTURIAN APPS</a>
+            <a href="./fightwear.html" class="hidButton">CENTURIAN FIGHTWEAR</a>
+            <a href="./contactUs.html" class="hidButton">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="currentOffer">
+        <div id="currentOfferText">
+          <h3>£30 a Month for:</h3>
+          <h3>Boxing, MMA, PT</h3>
+        </div>
+      </div>
+      <div id="sessionDetails">
+        <div id="sessionDetailsText">
+          <button class="sessionDetailsButton" onclick="scrollToSection('littleLeague')">
+            <h3>FREE - Little League - Mon & Thu: 4:15pm-5pm</h3>
+          </button>
+          <button class="sessionDetailsButton" onclick="scrollToSection('bigLeague')">
+            <h3>FREE - Big League - Mon & Thu: 5:15pm-6pm</h3>
+          </button>
+          <button class="sessionDetailsButton" onclick="scrollToSection('adultABC')">
+            <h3>£6 Per Session - Adults A.B.C - Wed: 7:30pm-8:30pm</h3>
+          </button>
+        </div>
+      </div>
+
+      <div id="littleLeague">
+        <div class="sectionImage">
+          <div class="sectionText">
+            <h2>Little League</h2>
+            <h3>Ages</h3>
+            <p>9 Year Olds - 13 Year Olds</p>
+            <h3>Times</h3>
+            <p>Mondays & Thursdays @ 5:15pm-6pm</p>
+            <h3>Prices</h3>
+            <p>FREE</p>
+          </div>
+          <div class="sectionImages">
+            <div id="littleLeagueImageContainer" class="image-container">
+              <img src="./Images/CoachPictures/Image1.png" class="slide" />
+              <img src="./Images/CoachPictures/Image2.png" class="slide" />
+              <img src="./Images/CoachPictures/Image3.png" class="slide" />
+              <img src="./Images/CoachPictures/Image4.png" class="slide" />
+              <img src="./Images/CoachPictures/Image5.png" class="slide" />
+            </div>
+            <div class="slider-buttons">
+              <button id="littleLeaguePrevButton" class="slider-button" onclick="prevSlide('littleLeague')">&#9664; Prev</button>
+              <button id="littleLeagueNextButton" class="slider-button" onclick="nextSlide('littleLeague')">Next &#9654;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollButton">
+        <button id="scrollButton" onclick="scrollToSection('bigLeague')">
+          <div class="scrollIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 21l-12-18h24z" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div id="bigLeague">
+        <div class="sectionImage">
+          <div class="sectionText">
+            <h2>Big League</h2>
+            <h3>Ages</h3>
+            <p>14 Year Olds - 18 Year Olds</p>
+            <h3>Times</h3>
+            <p>Mondays & Thursdays @ 6:15pm-7pm</p>
+            <h3>Prices</h3>
+            <p>FREE</p>
+          </div>
+          <div class="sectionImages">
+            <div id="bigLeagueImageContainer" class="image-container">
+              <img src="./Images/CoachPictures/Image1.png" class="slide" />
+              <img src="./Images/CoachPictures/Image2.png" class="slide" />
+              <img src="./Images/CoachPictures/Image3.png" class="slide" />
+              <img src="./Images/CoachPictures/Image4.png" class="slide" />
+              <img src="./Images/CoachPictures/Image5.png" class="slide" />
+            </div>
+            <div class="slider-buttons">
+              <button id="bigLeaguePrevButton" class="slider-button" onclick="prevSlide('bigLeague')">&#9664; Prev</button>
+              <button id="bigLeagueNextButton" class="slider-button" onclick="nextSlide('bigLeague')">Next &#9654;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollButton">
+        <button id="scrollButton" onclick="scrollToSection('adultABC')">
+          <div class="scrollIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 21l-12-18h24z" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div id="adultABC">
+        <div class="sectionImage">
+          <div class="sectionText">
+            <h2>Adults Amateur Boxing</h2>
+            <h3>Ages</h3>
+            <p>18+ Feel Free To Join</p>
+            <h3>Times</h3>
+            <p>Wednesdays @ 7:30pm-8:30pm</p>
+            <h3>Prices</h3>
+            <p>£6 Per Session</p>
+          </div>
+          <div class="sectionImages">
+            <div id="adultABCImageContainer" class="image-container">
+              <img src="./Images/CoachPictures/Image1.png" class="slide" />
+              <img src="./Images/CoachPictures/Image2.png" class="slide" />
+              <img src="./Images/CoachPictures/Image3.png" class="slide" />
+              <img src="./Images/CoachPictures/Image4.png" class="slide" />
+              <img src="./Images/CoachPictures/Image5.png" class="slide" />
+            </div>
+            <div class="slider-buttons">
+              <button id="adultABCPrevButton" class="slider-button" onclick="prevSlide('adultABC')">&#9664; Prev</button>
+              <button id="adultABCNextButton" class="slider-button" onclick="nextSlide('adultABC')">Next &#9654;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; Centurian Warrior 2023</footer>
+    <script src="./JS/boxing.js"></script>
+  </body>
+</html>

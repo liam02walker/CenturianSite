@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/bellica.css" />
+    <title>Centurian Warrior</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <img src="./Images/TransparentLogo.png" />
+
+        <div id="navButtons">
+          <a href="./index.html" class="navButton">HOME</a>
+          <a href="./boxing.html" class="navButton">AMATEUR BOXING</a>
+          <a href="./training.html" class="navButton">PERSONAL TRAINING</a>
+          <button id="moreButton" onclick="moreButton()">MORE</button>
+          <div class="hiddenLinks" id="hiddenLinks">
+            <a href="./show.html" class="hidButton">CENTURIAN SHOW</a>
+            <a href="./apps.html" class="hidButton">CENTURIAN APPS</a>
+            <a href="./fightwear.html" class="hidButton">CENTURIAN FIGHTWEAR</a>
+            <a href="./contactUs.html" class="hidButton">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="currentOffer">
+        <div id="currentOfferText">
+          <h3>£30 a Month for:</h3>
+          <h3>Boxing, MMA, PT</h3>
+        </div>
+      </div>
+      
+      <div id="sessionDetails">
+        <div id="sessionDetailsText">
+          <h3>£6 Per Session - Mon & Thu: 6:15pm-8:00pm</h3>
+        </div>
+      </div>
+      <div id="bellica">
+      <div class="sectionImage">
+        <div class="sectionText">
+          <h2>ARS BELLICA</h2>
+          <p>There are 3 different fighting systems everyone should know: Boxing, Muay Thai & BJJ.</p>
+          <p>ARS Bellica has been created with the effective criteria to help you in any type of situation you may encounter.</p>
+          <p>
+            The first belt achieved in ARS Bellica is the Black Belt as it symbolises Darkness, and you will go through each belt with Hard Work & Repetition.
+          </p>
+          <p>Being a black belt in ARS Bellica you will be able to defend yourself in Life Threatening situations!</p>
+        </div>
+        <div class="sectionImages">
+          <div id="imageContainer">
+            <img src="./Images/CoachPictures/Image1.png" class="slide" />
+            <img src="./Images/CoachPictures/Image2.png" class="slide" />
+            <img src="./Images/CoachPictures/Image3.png" class="slide" />
+            <img src="./Images/CoachPictures/Image4.png" class="slide" />
+            <img src="./Images/CoachPictures/Image5.png" class="slide" />
+          </div>
+          <div class="slider-buttons">
+            <button id="prevButton" class="slider-button" onclick="prevSlide()">&#9664; Prev</button>
+            <button id="nextButton" class="slider-button" onclick="nextSlide()">Next &#9654;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="scrollButton">
+        <button id="scrollButton" onclick="scrollToSection('about')">
+            <div class="scrollIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 21l-12-18h24z" />
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <div id="about">
+      <div class="sectionContainer">
+        <div class="sectionText">
+          <h2>What Is ARS Bellica MMA?</h2>
+          <h3>Description</h3>
+          <p>
+            ARS Bellica has been created by Adam Jones, who has studied Martial Arts for 20 years, which includes the effective ctiteria to be able to defend
+            yourself in any life threatening situation. Students as a Black Belt, which in ARS Bellica is the first belt a student can achieve, will be able to
+            properly defend themselves. ARS Bellica is a Latin word that means Art Of War and it will be Britain's first recognised Martial Arts as the Romans
+            created the systems that led to the development of Great Britain. Mastering ARS Bellica will take time and true dedication from every single person,
+            but in the end will benefit each student greatly as they will understand how to work on the ground and on their feet.
+          </p>
+          <h3>MMA Styles</h3>
+          <p>
+            ARS Bellica is composed of 10 different MMA Styles, carefully selected by Adam Jones over 20 years of Martial Arts experience. Each has been picked for
+            one reason only, to master self defence.
+          </p>
+          <p>
+            These 10 MMA Styles are:
+            <div id="class">
+                <ul id="leftList">
+                    <li>Boxing</li>
+                    <li>Karate</li>
+                    <li>Muay Thai</li>
+                    <li>Tae Kwondo</li>
+                    <li>Judo</li>
+                </ul>
+                <ul id="rightList">
+                    <li>Ju Jitzu</li>
+                    <li>Hand to Hand Combat</li>
+                    <li>Weapon Disarming</li>
+                    <li>Fitness</li>
+                    <li>Patterns / Forms / Katas</li>
+                </ul>
+            </div>
+          </p>
+          <h3>Grading System</h3>
+          <p>
+            In ARS Bellica each student will work towards the Black Belt, which will be the first Belt as it symbolises darkness. Your journey to the next belts will be a journey
+            of finding enlightenment through repetition and hard work. People should be tested to get the absolute best out of them and that is why we will follow this grading
+            system.
+          </p>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer>&copy; Centurian Warrior 2023</footer>
+    <script src="./JS/bellica.js"></script>
+  </body>
+</html>

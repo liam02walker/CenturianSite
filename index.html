@@ -10,116 +10,34 @@
   </head>
 
   <body>
-    <div id="header">
-      <img id="logo" src="./Images/TransparentLogo.png" alt="Logo" />
-      <div id="nav-column1">
-        <a class="nav-button" href="./index.html">HOME</a>
-        <a class="nav-button" href="#">ARS BELLICA MMA</a>
-        <a class="nav-button" href="#">CENTURIAN AMATEUR BOXING</a>
-        <a class="nav-button" href="#">PERSONAL TRAINING</a>
-        <a class="nav-button" href="#">CENTURIAN TV</a>
-        <a class="nav-button" href="#">CENTURIAN FIGHTWEAR</a>
-        <a class="nav-button" href="#">ULTIMATE WARRIOR CHALLENGES</a>
-        <a class="nav-button" href="#">CONTACT US</a>
-      </div>
-    </div>
-
-    <div id="content">
-      <div id="text">
-        <h1>Welcome to Centurian Warrior</h1>
-        <p>This website is all about the power of influence</p>
-
-        <p>Learning from other people is how the world works</p>
-
-        <p>
-          EMBRACE Education and take from it what you need. Then pass it on so
-          that the next person can follow and pass it on to the next.
-        </p>
-
-        <p>
-          Humans have been designed to be the Work Force and reproduce the next,
-          serve your purpose and let's get to work!
-        </p>
-      </div>
-      <div id="images-container">
-        <div class="slideshow-container">
-          <img
-            class="slideshow active"
-            src="./Images/CoachPictures/Coach1.jpg"
-            alt="Image 1"
-          />
-          <img
-            class="slideshow"
-            src="./Images/CoachPictures/Coach2.jpg"
-            alt="Image 2"
-          />
-          <img
-            class="slideshow"
-            src="./Images/CoachPictures/Coach3.jpg"
-            alt="Image 3"
-          />
-          <img
-            class="slideshow"
-            src="./Images/CoachPictures/Coach4.jpg"
-            alt="Image 4"
-          />
-
-          <button class="next-button" onclick="nextImage()">〉</button>
-          <button class="previous-button" onclick="previousImage()">〈</button>
-
-          <div id="image-circles">
-            <div class="image-circle" onclick="showSlide(0)"></div>
-            <div class="image-circle" onclick="showSlide(1)"></div>
-            <div class="image-circle" onclick="showSlide(2)"></div>
-            <div class="image-circle" onclick="showSlide(3)"></div>
-          </div>
+    <img src="./Images/CircleLogo.png" />
+    <div class="content">
+      <div id="videoContainer">
+        <div id="leftVideo">
+          <h1>INTRODUCTION</h1>
+          <video controls width="500px" height="300px">
+            <source src="./your_left_video_source.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div id="navButtons">
+          <a href="./bellica.html" class="navButton">ARS BELLICA MMA</a>
+          <a href="./boxing.html" class="navButton">AMATEUR BOXING</a>
+          <a href="./training.html" class="navButton">PERSONAL TRAINING</a>
+          <a href="./show.html" class="navButton">CENTURIAN SHOW</a>
+          <a href="./apps.html" class="navButton">CENTURIAN APPS</a>
+          <a href="./fightwear.html" class="navButton">CENTURIAN FIGHTWEAR</a>
+          <a href="./contactUs.html" class="navButton">CONTACT US</a>
+        </div>
+        <div id="rightVideo">
+          <h1>PRINCIPLES</h1>
+          <video controls width="500px" height="300px">
+            <source src="./your_right_video_source.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
-    <script>
-      showSlide(slideIndex);
-    </script>
-
-    <div id="scroll-section">
-      <div class="scroll-line"></div>
-      <div class="scroll-arrow" onclick="scrollToSection('centurian-section')">
-        <span>⇩</span>
-      </div>
-    </div>
-
-    <div id="centurian-section">
-      <h2 div id="centurian-section-heading">The Centurian Principles</h2>
-      <p>Believing Is To Achieve</p>
-      <p>To believe you are capable of anything, makes anything possible</p>
-
-      <!-- Add the video element with controls and a source -->
-      <video controls width="100%">
-        <source src="your-video-file.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-      <div id="footer-text">
-        <span id="footer-copyright"
-          >&#169; Copyright 2023 by Centurian Warrior</span
-        >
-        <div id="footer-grid">
-          <!-- Footer grid items -->
-          <a href="./index.html" class="footer-item">Info</a>
-          <a href="./contactus.html" class="footer-item">Contact Us</a>
-          <a href="./boxing.html" class="footer-item">Amateur Boxing</a>
-          <a href="./mma.html" class="footer-item">ARS Bellica MMA</a>
-          <a href="./pt.html" class="footer-item">Personal Training</a>
-          <a href="./challenge.html" class="footer-item"
-            >Ultimate Warriors Challenge</a
-          >
-          <a href="./tv.html" class="footer-item">Centurian TV</a>
-          <a href="./fightwear.html" class="footer-item">Centurian Fightwear</a>
-          <a href="./contactus.html" class="footer-item">Centurian Socials</a>
-        </div>
-      </div>
-    </div>
+    <footer>&copy; Centurian Warrior 2023</footer>
   </body>
 </html>

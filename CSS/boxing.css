@@ -1,0 +1,203 @@
+/* DEFAULT STYLE */
+body {
+  background-color: #1f1f1f;
+}
+.headerContainer {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.headerContainer img {
+  width: 20%;
+  margin-right: 20%;
+}
+.navButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+.navButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+#moreButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+#moreButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+.hiddenLinks {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #808080;
+  margin-left: auto;
+}
+.hidButton {
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.hidButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+#hiddenLinks {
+  display: none;
+}
+footer {
+  color: #b4ad84;
+  text-align: center;
+}
+/* Offer Details */
+#currentOffer {
+  background-color: #fffc4d;
+  width: 20%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 42.5%;
+  margin-bottom: 10px;
+}
+#currentOfferText {
+  text-align: center;
+}
+/* Session Details */
+#sessionDetails {
+  background-color: #ffd700;
+  width: 35%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 35%;
+}
+#sessionDetailsText {
+  text-align: center;
+}
+.sessionDetailsButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.sessionDetailsButton:hover {
+  background-color: #fff3ac;
+  transform: scale(1.1);
+}
+
+/* Section with Images Style */
+.sectionImage {
+  background-color: rgba(71, 71, 71, 0.5); /* Semi-transparent grey background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 25px;
+}
+.sectionText {
+  flex: 1;
+  text-align: left; /* Align text on the left side */
+  font-size: 25px;
+}
+.sectionText h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #d8a600;
+}
+.sectionText p {
+  color: #fff389;
+}
+.sectionImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative; /* Allows for positioning the navigation buttons */
+}
+.slider-buttons {
+  margin-top: 10px; /* Add some spacing between images and buttons */
+}
+.slider-button {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.sectionContainer {
+  background-color: rgba(83, 83, 83, 0.5); /* Semi-transparent gray background */
+  text-align: center; /* Center-align text inside sectionContainer */
+  padding: 20px; /* Add some padding for spacing */
+  margin: 25px 20px;
+  border-radius: 5px;
+}
+.sectionText {
+  font-size: 25px;
+}
+.sectionText h2 {
+  text-decoration: underline black;
+  font-size: 50px;
+  color: #c7ac14;
+}
+.sectionText h3 {
+  color: #ccb73e;
+}
+.sectionText p {
+  color: #fff4b3;
+}
+.sectionText li {
+  color: #fff4b3;
+}
+#class {
+  display: flex;
+}
+/* ScrollButton Styles */
+.scrollButton {
+  background-color: #c4a600;
+  width: 100%;
+  text-align: center;
+}
+#scrollButton {
+  width: 75px;
+  height: 75px;
+  background-color: #fffb00;
+  border: none;
+  border-radius: 50%; /* Makes it a circle */
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+#scrollButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+.scrollIcon {
+  fill: black; /* Arrow color */
+}
