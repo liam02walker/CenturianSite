@@ -201,3 +201,36 @@ footer {
 .scrollIcon {
   fill: black; /* Arrow color */
 }
+
+@media (max-width: 480px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .navButton {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  #moreButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .hiddenLinks {
+    max-width: fit-content;
+    background-color: #1f1f1f;
+  }
+  #currentOffer {
+    width: 40%;
+    margin-left: 25%;
+  }
+  #sessionDetails {
+    width: 40%;
+    margin-left: 25%;
+  }
+  .sectionImage {
+    display: flex;
+    flex-direction: column;
+  }
+}

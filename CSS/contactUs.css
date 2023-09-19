@@ -89,3 +89,32 @@ footer {
   color: #b4ad84;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .navButton {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  #moreButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .hiddenLinks {
+    max-width: fit-content;
+    background-color: #1f1f1f;
+  }
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 40px;
+  }
+  .sectionText {
+    font-size: large;
+  }
+}

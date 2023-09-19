@@ -76,92 +76,18 @@ footer {
   margin-top: 10px;
 }
 
-@media (max-width: 500px) {
-  body {
-    background-color: #1f1f1f;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Change height to min-height for mobile compatibility */
-  }
-
+@media (max-width: 480px) {
   .content {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column; /* Change to column layout on mobile */
-  }
-
-  img {
-    max-width: 100%; /* Allow images to adapt to mobile screen size */
-    height: auto;
-    margin: 10px 0; /* Add some spacing around images */
-  }
-
-  #navButtons {
-    margin-top: 10px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
   }
-
-  .hidden {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: gold;
-    z-index: 1;
-  }
-
-  .visible {
-    display: flex;
-  }
-
-  .navButton {
-    text-decoration: none;
-    background-color: gold;
-    color: black;
-    border: none;
-    font-size: 20px; /* Reduce font size for mobile */
-    border-radius: 10px; /* Smaller border radius */
-    padding: 10px 15px; /* Adjust padding for mobile */
-    margin: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    white-space: nowrap;
-    width: 100%; /* Make buttons span full width on mobile */
-  }
-
-  .navButton:hover {
-    background-color: lightyellow;
-    transform: scale(1.05);
-  }
-
   #videoContainer {
     display: flex;
-    flex-direction: column; /* Change to column layout on mobile */
-    align-items: center; /* Center align videos */
+    flex-direction: column;
+    margin-top: 100%;
   }
-
   #leftVideo,
   #rightVideo {
-    margin: 10px 0; /* Add spacing between videos */
-    width: 100%; /* Make videos span full width on mobile */
-  }
-
-  #leftVideo h1,
-  #rightVideo h1 {
-    color: #fdff8b;
-  }
-
-  footer {
-    margin-top: 10px;
+    margin: 0 25px;
   }
 }
