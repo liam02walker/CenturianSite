@@ -34,6 +34,7 @@ body {
   margin-right: 5px;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
+  cursor: pointer;
 }
 #moreButton:hover {
   background-color: #ffef97;
@@ -65,12 +66,34 @@ body {
 #hiddenLinks {
   display: none;
 }
-/* Section Just Text */
+footer {
+  color: #b4ad84;
+  text-align: center;
+}
+/* Session Details */
+#sessionDetailsText {
+  text-align: center;
+}
+.sessionDetailsButton {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.sessionDetailsButton:hover {
+  background-color: #fff3ac;
+  transform: scale(1.1);
+}
+
+/* Section Text & Videos*/
 .sectionContainer {
   background-color: rgba(83, 83, 83, 0.5);
   text-align: center;
   padding: 20px;
-  margin: 5px 75px;
+  margin: 5px 25px;
 }
 .sectionText {
   font-size: 25px;
@@ -86,9 +109,37 @@ body {
 .sectionText p {
   color: #fff4b3;
 }
-footer {
-  color: #b4ad84;
+.videoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+video {
+  margin: 5px;
+}
+/* ScrollButton Styles */
+.scrollButton {
+  background-color: #c4a600;
+  width: 100%;
   text-align: center;
+  margin: 15px 0;
+}
+#scrollButton {
+  width: 75px;
+  height: 75px;
+  background-color: #fffb00;
+  border: none;
+  border-radius: 50%; /* Makes it a circle */
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+#scrollButton:hover {
+  background-color: #ffef97;
+  transform: scale(1.1);
+}
+.scrollIcon {
+  fill: black; /* Arrow color */
 }
 
 @media (max-width: 480px) {
@@ -110,12 +161,25 @@ footer {
     max-width: fit-content;
     background-color: #1f1f1f;
   }
-  .sectionContainer {
+  #currentOffer {
+    width: 40%;
+    margin-left: 25%;
+  }
+  #sessionDetails {
+    width: 40%;
+    margin-left: 25%;
+  }
+  .sectionImage {
     display: flex;
     flex-direction: column;
-    margin: 5px 40px;
   }
-  .sectionText {
-    font-size: large;
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  video {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
   }
 }

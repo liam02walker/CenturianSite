@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/show.css" />
+    <title>Centurian Warrior</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <img src="./Images/TransparentLogo.png" />
+
+        <div id="navButtons">
+          <a href="./index.html" class="navButton">HOME</a>
+          <a href="./bellica.html" class="navButton">ARS BELLICA MMA</a>
+          <a href="./boxing.html" class="navButton">AMATEUR BOXING</a>
+          <button id="moreButton" onclick="moreButton()">MORE</button>
+          <div class="hiddenLinks" id="hiddenLinks">
+            <a href="./training.html" class="hidButton">PERSONAL TRAINING</a>
+            <a href="./apps.html" class="hidButton">ULTIMATE WARRIOR CHALLENGE</a>
+            <a href="./fightwear.html" class="hidButton">CENTURIAN FIGHTWEAR</a>
+            <a href="./contactUs.html" class="hidButton">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="sessionDetails">
+        <div id="sessionDetailsText">
+          <button class="sessionDetailsButton" onclick="openApp()">
+            <h3>DOWNLOAD APP HERE</h3>
+          </button>
+        </div>
+      </div>
+      <div id="show">
+        <div class="sectionContainer">
+          <div class="sectionText">
+            <h2>CENTURIAN TV SNIPPETS</h2>
+            <div class="videoContainer">
+              <video controls width="500px" height="300px">
+                <source src="./your_right_video_source.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video controls width="500px" height="300px">
+                <source src="./your_right_video_source.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+    </div>
+      
+      <div class="scrollButton">
+        <button id="scrollButton" onclick="scrollToSection('about')">
+            <div class="scrollIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 21l-12-18h24z" />
+                </svg>
+            </div>
+        </button>
+    </div>
+    </main>
+    <footer>&copy; Centurian Warrior 2023</footer>
+    <script src="./JS/show.js"></script>
+  </body>
+</html>

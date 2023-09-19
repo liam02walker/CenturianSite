@@ -1,7 +1,5 @@
 body {
   background-color: #1f1f1f;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,10 +12,10 @@ body {
   display: flex;
   flex-direction: row;
 }
-img {
-  max-width: 10%;
-  margin-top: -10px;
+#imageLogo {
+  max-width: 55%;
   height: auto;
+  margin-bottom: 50px;
 }
 #navButtons {
   margin-top: 10px;
@@ -26,18 +24,6 @@ img {
   flex-direction: column; /* Change flex-direction to column */
   align-items: center; /* Center-align buttons */
   position: relative;
-}
-.hidden {
-  display: none; /* Initially hide the hidden links container */
-  flex-direction: column; /* Set the flex-direction to column for vertical layout */
-  position: absolute;
-  top: 100%; /* Position it just below the "More" button */
-  left: 0;
-  background-color: gold;
-  z-index: 1; /* Ensure it appears above other content */
-}
-.visible {
-  display: flex; /* Show the hidden container when it has the "visible" class */
 }
 .navButton {
   text-decoration: none;
@@ -66,7 +52,7 @@ img {
 #rightVideo {
   flex: 1;
   margin: 0 25px; /* Add some spacing between videos and buttons */
-  margin-top: -50px;
+  margin-top: 15%;
 }
 #leftVideo h1,
 #rightVideo h1 {
@@ -92,8 +78,13 @@ footer {
     flex-direction: column;
     margin-top: 100%;
   }
-  #leftVideo,
+  #leftVideo {
+    margin-top: 50%;
+  }
   #rightVideo {
-    margin: 0 25px;
+    margin: 0 0;
+  }
+  video {
+    max-width: 350px;
   }
 }
