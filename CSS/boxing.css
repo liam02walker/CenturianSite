@@ -1,6 +1,11 @@
 /* DEFAULT STYLE */
 body {
   background-color: #1f1f1f;
+  overflow-x: hidden;
+}
+img {
+  max-width: 500px;
+  max-height: 500px;
 }
 .headerContainer {
   background-color: #1f1f1f;
@@ -109,7 +114,7 @@ footer {
 
 /* Section with Images Style */
 .sectionImage {
-  background-color: rgba(71, 71, 71, 0.5); /* Semi-transparent grey background */
+  background-color: rgba(71, 71, 71, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,7 +124,7 @@ footer {
 }
 .sectionText {
   flex: 1;
-  text-align: left; /* Align text on the left side */
+  text-align: left;
   font-size: 25px;
 }
 .sectionText h2 {
@@ -137,10 +142,10 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  position: relative; /* Allows for positioning the navigation buttons */
+  position: relative;
 }
 .slider-buttons {
-  margin-top: 10px; /* Add some spacing between images and buttons */
+  margin-top: 10px;
 }
 .slider-button {
   background-color: #ffd700;
@@ -152,9 +157,9 @@ footer {
   cursor: pointer;
 }
 .sectionContainer {
-  background-color: rgba(83, 83, 83, 0.5); /* Semi-transparent gray background */
-  text-align: center; /* Center-align text inside sectionContainer */
-  padding: 20px; /* Add some padding for spacing */
+  background-color: rgba(83, 83, 83, 0.5);
+  text-align: center;
+  padding: 20px;
   margin: 25px 20px;
   border-radius: 5px;
 }
@@ -203,6 +208,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
   .headerContainer {
     display: flex;
     flex-direction: column;

@@ -92,6 +92,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
   .headerContainer {
     display: flex;
     flex-direction: column;

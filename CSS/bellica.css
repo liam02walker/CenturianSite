@@ -2,6 +2,10 @@
 body {
   background-color: #1f1f1f;
 }
+img {
+  max-width: 500px;
+  max-height: 500px;
+}
 .headerContainer {
   background-color: #1f1f1f;
   display: flex;
@@ -190,6 +194,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
   .headerContainer {
     display: flex;
     flex-direction: column;
